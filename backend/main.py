@@ -30,6 +30,9 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/")
+def home():
+    return {"message": "HRMS API Live "}
 
 # ---------------- EMPLOYEES ----------------
 
